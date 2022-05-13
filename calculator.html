@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link href='https://fonts.googleapis.com/css?family=Poppins' rel='stylesheet'>
+    <title>Calculator</title>
+</head>
+
+<body>
+    
+    <div class="container">
+        <div class="display">
+            <input id="result" type="text" value="0">
+        
+        </div>
+
+        <div class="main" id="scientific">
+    
+            <div class="buttons">
+                <input type="button" value="C" >
+                <input type="button" value="&larr;" >
+                <input type="button" value="+" >
+                <input type="button" value="-" >
+                <button value="percent">%</button>  
+                <button id="deg" value="deg" class="selected">deg</button>
+            </div>
+    
+            <div class="buttons">
+                <input type="button" value="7" >
+                <input type="button" value="8" >
+                <input type="button" value="9" >
+                <input type="button" value="*" >
+                <button value="sin">sin</button>
+                <button id="rad" value="rad">rad</button>
+            </div>
+    
+            <div class="buttons">
+                <input type="button" value="4" >
+                <input type="button" value="5" >
+                <input type="button" value="6" >
+                <input type="button" value="/" >
+                <button value="cos">cos</button>
+                <button value="e">e</button>
+            </div>
+    
+            <div class="buttons">
+                <input type="button" value="1" >
+                <input type="button" value="2" >
+                <input type="button" value="3" >
+                <input type="button" value="=">
+                <button value="tan">tan</button>
+                <button value="asin">sin<sup>-1</sup></button>
+            </div>
+    
+            <div class="buttons">
+                <input type="button" value="(" >
+                <input type="button" value="0" >
+                <input type="button" value=")" >
+                <input type="button" value="." >
+                <button value="log">ln</button>
+                <button value="acos">cos<sup>-1</sup></button>
+            </div>
+            <div class="buttons">
+                <button value="sqrt">&radic;</button>
+                <button value="fact">n!</button>
+                <button value="ℼ">ℼ</button>
+                <button value="^">^</button>
+                <button value="exp">exp</button>
+                <button value="atan">tan<sup>-1</sup></button>
+                
+            </div>
+        </div>
+    </div>   
+    <div class="history">
+        
+            <div class="show-history">
+                <h2>No History Yet</h2>
+                <ul>
+                        
+                </ul>
+            </div>
+            <div class="mySidenav">
+                <a href="#" onclick="switchCalci()" ><i class="fa-solid fa-calculator"></i></a>
+            </div>
+            <button class="clear-btn">Clear History</button>
+    </div>
+    <script src="https://kit.fontawesome.com/a144590b26.js" crossorigin="anonymous"></script>  
+    <script src="calculator.js"></script>
+    <script src="scientific-cal.js"></script>
+
+</body>
+</html>

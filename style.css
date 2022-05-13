@@ -1,0 +1,149 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  body{
+    display: flex;
+    flex-direction: row;
+  }
+
+.container{
+   height: 90vh;
+   width: 60%;
+   border-radius: 10px; 
+   margin: 0 auto;
+   
+}
+
+.display{
+    width: 100%;
+    height: 30vh;
+    margin-bottom: 10px;
+}
+
+.display input{
+    width: 100%;
+    height: 100%;
+    background-color:rgb(216, 214, 214);
+    border: none;
+    text-align: end;
+    padding-right: 10px;
+    font-size: 50px;
+    color: black;
+    border-radius: 20px;
+    box-shadow: 0 9px 9px rgb(77, 75, 75);
+
+}
+.display input:focus{
+    outline:none;
+}
+.main{
+    height: 70vh;
+    width: 100%;
+}
+
+.buttons{
+    display: flex;
+    width: 100%;
+}
+.buttons input, .buttons button{
+    width: 30%;
+    height: 10.7vh;
+    font-size: 30px;
+    background-color:rgb(27, 26, 26);
+    color:white;
+    margin:2px;
+    border-radius: 15px;
+    box-shadow: 0 9px 9px rgb(77, 75, 75);
+    border: 1px solid #ccc;
+    text-align: center;
+    
+}
+
+.buttons button:last-of-type{
+    margin: 2px 0 2px 2px;
+}
+.buttons input:first-of-type{
+    margin: 2px 2px 2px 0px;
+}
+
+.buttons input:active, .buttons button:active{
+    background-color: #cdcfd0;
+}
+
+.history{
+    display: flex;
+    justify-content:space-between;
+    flex-direction: column;
+    width: 39%;
+    margin: 0 0 0 auto;
+    background-color:rgb(223, 223, 211);
+    height: 99vh;  
+    border-radius: 20px;
+    font-family:Poppins;
+
+}
+
+.row{
+    display:flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+.show-history{
+    margin: 20px;
+}
+
+li{
+    list-style:none;
+    padding:10px 5px;
+}
+
+.clear-btn{
+ margin:20px;
+ width: 30%;
+ padding:16px 0px;
+ border-radius: 12px;
+ border: none;
+ background:#f44336;
+ color:white;
+ font-size:medium;
+}
+
+.clear-btn:active{
+    background:white;
+    color:black;
+    
+}
+
+.buttons .selected{
+    background-color: #797777;
+}
+
+.mySidenav {
+    position:fixed;
+    top:15px;
+    right: 10px;
+    font-size: 25px; 
+    text-decoration: none;
+  }
+
+.scientific{
+    display: none;
+}
+
+@media only screen and (min-width: 960px) and (max-width: 1980px){
+    .display input{
+    border-radius: 20px;
+    font-size: 50px;
+
+    }
+    .container{
+     height: 100vh;
+     width: 60%;
+     margin:0 auto;
+    }
+    .buttons input{
+        font-size: 30px;
+    }
+}
